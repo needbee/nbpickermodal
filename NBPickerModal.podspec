@@ -10,5 +10,20 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
   s.source_files     = 'src', 'src/**/*.{h,m}'
 
+  s.dependency 'NBHighlightButton', '~> 1.0.1'
   s.dependency 'NBMiniModal', '~> 1.0'
+  s.dependency 'UIView+PartialRoundedCorner', '~> 1.0'
+
+  s.subspec "NBHighlightButton" do |ss|
+    ss.dependency "NBHighlightButton", "~> 1.0.1"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/NBHighlightButton"}
+  end
+  s.subspec "NBMiniModal" do |ss|
+    ss.dependency "NBHighlightButton", "~> 1.0"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/NBMiniModal"}
+  end
+  s.subspec "UIView+PartialRoundedCorner" do |ss|
+    ss.dependency "UIView+PartialRoundedCorner", "~> 1.0"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/UIView+PartialRoundedCorner"}
+  end
 end
