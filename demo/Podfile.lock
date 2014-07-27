@@ -1,0 +1,16 @@
+PODS:
+  - NBHighlightButton (1.0.1)
+  - NBMiniModal (1.0.0)
+  - UIView+PartialRoundedCorner (1.0.0)
+
+DEPENDENCIES:
+  - NBHighlightButton (~> 1.0.1)
+  - NBMiniModal (~> 1.0)
+  - UIView+PartialRoundedCorner (~> 1.0)
+
+SPEC CHECKSUMS:
+  NBHighlightButton: 4f00beba37ae89c4e13f3de2fde3df0ac39dc912
+  NBMiniModal: a7baba593e81dd8f4d43c391300e60797d839014
+  UIView+PartialRoundedCorner: 36b024da40e9a7f163766384bdf47c57dfa2d902
+
+COCOAPODS: 0.33.1
