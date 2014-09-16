@@ -77,7 +77,7 @@
 - (void)tappedOk
 {
     NSUInteger row = [_picker selectedRowInComponent:0];
-    NSLog(@"selected row %d", row);
+//    NSLog(@"selected row %d", (int)row);
     NSDictionary *optionConfig = [_pickerOptions objectAtIndex:row];
     _value = [optionConfig objectForKey:@"value"];
     [self.delegate completedMiniModal:self];
