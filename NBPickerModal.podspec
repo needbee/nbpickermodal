@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NBPickerModal"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "A picker inside a mini modal window"
   s.homepage         = "https://github.com/needbee/nbpickermodal"
   s.license          = 'MIT'
