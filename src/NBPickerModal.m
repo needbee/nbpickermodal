@@ -55,7 +55,7 @@
         // other controls
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, viewWidth, titleHeight)];
         _titleLabel.text = title;
-        _titleLabel.textAlignment = UITextAlignmentCenter;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        titleLabel.textColor = [ThemeConfig colorForComponent:@"modalText"];
         [self addSubview:_titleLabel];
         
@@ -114,7 +114,7 @@
     if (!label){
         label = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, self.bounds.size.width, 40.0)];
         label.backgroundColor = [UIColor clearColor];
-        label.textAlignment = UITextAlignmentCenter;
+        label.textAlignment = NSTextAlignmentCenter;
     }
     
     NSDictionary *optionConfig = [_pickerOptions objectAtIndex:row];
